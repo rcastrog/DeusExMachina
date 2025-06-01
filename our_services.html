@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Deus Ex Machina</title>
+  <style>
+    #bgVideo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100vw;
+      min-height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 900px;
+      margin: 60px auto;
+    }
+
+    .logo {
+      width: 200px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .services {
+      text-align: left;
+      margin-top: 30px;
+    }
+
+    .services h2 {
+      color: #00bfff;
+      margin-top: 30px;
+    }
+
+    .services p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    .back-link {
+      margin-top: 40px;
+    }
+
+    .back-link a {
+      color: #007BFF;
+      text-decoration: none;
+      background: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop playsinline id="bgVideo">
+    <source src="./DEM_pics/geometric_background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="overlay">
+    <img src="./DEM_pics/logo_DEM.jpg" alt="Deus Ex Machina Logo" class="logo">
+    <h1>Our Services</h1>
+    <div class="services">
+      <h2>AI Strategy Consulting</h2>
+      <p>We help C-level executives and leadership teams define clear, impactful AI strategies aligned with business goals. Our advisory covers everything from opportunity discovery to responsible AI governance frameworks.</p>
+
+      <h2>ML Engineering & Implementation</h2>
+      <p>From prototypes to production, we design and deploy custom machine learning solutions tailored to specific industry problems. This includes NLP, computer vision, time series modeling, and beyond.</p>
+
+      <h2>AI Product Design</h2>
+      <p>We support your internal innovation or co-develop standalone AI-driven products. Whether you're launching a new SaaS tool or automating internal workflows, our team provides the technical depth and business insight to deliver success.</p>
+
+      <h2>Data Labeling & Annotation Services</h2>
+      <p>We offer scalable, high-quality data labeling services optimized for machine learning workflows, using human-in-the-loop processes and domain-specific knowledge to ensure relevance and precision.</p>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
