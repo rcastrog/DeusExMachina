@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet the Team | Deus Ex Machina</title>
+  <style>
+
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.8; /* optional, adjust for better contrast */
+}
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* Dynamic background inspired by evolver.ai */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./DEM_pics/geometric_background.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+    @keyframes backgroundGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .logo {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .logo img {
+      width: 360px;
+      border-radius: 12px;
+    }
+
+    .profile {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      margin-bottom: 40px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .profile img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .profile h2 {
+      margin: 10px 0 5px;
+      font-size: 24px;
+      color: #111;
+    }
+    .profile h4 {
+      margin: 0 0 15px;
+      font-weight: normal;
+      color: #555;
+    }
+    .profile p {
+      text-align: left;
+      font-size: 14px;
+    }
+    .profile a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #007BFF;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+<video autoplay muted loop playsinline id="bgVideo">
+  <source src="./DEM_pics/geometric_background.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="./DEM_pics/logo_DEM.jpg" alt="Deus Ex Machina Logo">
+    </div>
+
+    <!-- CEO Profile -->
+    <div class="profile">
+      <img src="./DEM_pics/Ricardo.jfif" alt="Ricardo Castro">
+      <h2>Ricardo Castro, PhD</h2>
+      <h4>Founder & CEO</h4>
+      <p>Ricardo brings over 20 years of experience in data science, leading technical and managerial teams across the tech, financial, and manufacturing sectors. His work focuses on designing and implementing data-driven strategies that deliver measurable impact for global organizations. Ricardo combines deep technical expertise with strong business experience. He has led complex machine learning and AI initiatives and excels at translating technical innovation into business value.</p>
+      <a href="https://www.linkedin.com/in/ricardo-castro-phd/" target="_blank">View LinkedIn Profile</a>
+    </div>
+
+    <!-- Isabel Profile -->
+    <div class="profile">
+      <img src="./DEM_pics/Isabel.jpg" alt="Isabel Avendaño">
+      <h2>Isabel Avendaño</h2>
+      <h4>Executive Assistant</h4>
+      <p>Isabel is a highly organized and detail-oriented Executive Assistant with years of experience supporting executives and managing operations with discretion and efficiency. With a strong background in business management and information sciences, she excels at streamlining administrative processes and fostering professional relationships. Isabel is passionate about workflow optimization and productivity, always eager to grow and contribute to team success.</p>
+    </div>
+
+    <!-- Mateo Profile -->
+    <div class="profile">
+      <img src="./DEM_pics/Mateo.jpg" alt="Mateo Montoya Mejía">
+      <h2>Mateo Montoya Mejía</h2>
+      <h4>Materials Engineer</h4>
+      <p>Mateo is a Materials Engineer with expertise in metallic materials, including high- and low-temperature processing, metallography, and metalworking. With a strong commitment to ethical work and team collaboration, Mateo brings a scientific and analytical mindset to problem solving. He is currently pursuing a PhD in Materials Engineering and is passionate about research, teaching, and continuous learning.</p>
+    </div>
+  </div>
+</body>
+</html>
