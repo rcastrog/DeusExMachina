@@ -26,7 +26,7 @@
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.75); /* increased opacity */
       padding: 40px;
       border-radius: 10px;
       max-width: 900px;
@@ -65,16 +65,17 @@
     }
 
     .back-link a {
-      color: #007BFF;
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #007BFF;
+      color: white;
       text-decoration: none;
-      background: white;
-      padding: 10px 20px;
       border-radius: 5px;
-      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
 
     .back-link a:hover {
-      background-color: #e0e0e0;
+      background-color: #0056b3;
     }
   </style>
 </head>
