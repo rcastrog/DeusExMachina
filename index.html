@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome | Deus Ex Machina</title>
+  <style>
+    #bgVideo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100vw;
+      min-height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: 20px;
+    }
+
+    .logo {
+      width: 240px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 10px 20px;
+      padding: 12px 24px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .links a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop playsinline id="bgVideo">
+    <source src="./DEM_pics/geometric_background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="overlay">
+    <img src="./DEM_pics/logo_DEM.jpg" alt="Deus Ex Machina Logo" class="logo">
+    <h1>Deus Ex Machina</h1>
+    <p>We help organizations unlock the full value of artificial intelligence through strategic consulting, technical implementation, and deep domain expertise. From ideation to impact, we bring clarity to complexity and deliver results at scale.</p>
+    <div class="links">
+      <a href="DEM_meet_the_team.html">Meet the Team</a>
+      <a href="our_services.html">Our Services</a>
+    </div>
+  </div>
+</body>
+</html>
